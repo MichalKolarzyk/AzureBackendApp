@@ -8,34 +8,31 @@ namespace AzureBackendApp.Controllers
     [ApiController]
     public class CounterController : ControllerBase
     {
-        private static int _counter = 0;
+        private static Counter.Domain.Counter _counter = new Counter.Domain.Counter();
         [HttpGet]
         public int Get()
         {
-            return _counter;
+            return _counter.Get();
         }
 
         // POST api/<CounterController>
         [HttpPost("Increment")]
         public void Increment()
         {
-            _counter += 1;
+            _counter.Increment();
         }
 
         [HttpPost("Decrement")]
         public void Decrement()
         {
-            if (_counter <= 0)
-                throw new Exception("Counter can not have negative value");
-
-            _counter -= 1;
+            _counter.Decrement();
         }
 
         // DELETE api/<CounterController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public void Reset()
         {
-            _counter = 0;
+            _counter.Restart();
         }
     }
 }

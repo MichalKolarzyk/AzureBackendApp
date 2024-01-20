@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureBackendApp", "AzureBackendApp\AzureBackendApp.csproj", "{A4B4FE48-CA34-44B6-88D5-929861797E44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureBackendApp", "AzureBackendApp\AzureBackendApp.csproj", "{A4B4FE48-CA34-44B6-88D5-929861797E44}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE12AAC3-2E93-40A1-AD05-685E22086B0C}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\master_azurecounterapp.yml = .github\workflows\master_azurecounterapp.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counter.Domain", "Counter.Domain\Counter.Domain.csproj", "{39E2B268-D725-4A88-B40E-BAFB6287FA44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{A4B4FE48-CA34-44B6-88D5-929861797E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4B4FE48-CA34-44B6-88D5-929861797E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4B4FE48-CA34-44B6-88D5-929861797E44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E2B268-D725-4A88-B40E-BAFB6287FA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E2B268-D725-4A88-B40E-BAFB6287FA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E2B268-D725-4A88-B40E-BAFB6287FA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E2B268-D725-4A88-B40E-BAFB6287FA44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
